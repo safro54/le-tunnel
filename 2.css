@@ -1,0 +1,381 @@
+* {
+    overflow: auto;
+}
+
+body {
+    background-color: black;
+    font-family: "arial";
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    display: block;
+}
+
+li {
+  float: left;
+  border-radius: 0px;
+  border-right: 1px solid #bbb;
+  padding: 0px 5px;
+  /*background-color: lightblue;*/
+}
+
+li a {
+  display: block;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 13px 5px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: gray;
+}
+
+li a(.active){
+    color: gray;
+}
+
+.active {
+    color: gray;
+    background-color: white;
+}
+
+div.contenu {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("magret.webp") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: arial;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.categorie {
+    overflow: visible;
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+    position: fixed;
+    top: 0;
+}
+
+p.categorie {
+    background-color: rgba(30, 30, 30);
+    color: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 5px;
+}
+#resto {
+    color: red;
+    font-size: 20px;
+}
+
+img.proprios{
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid blue;
+    margin-top: 5px;
+    margin-left: 30%;
+}
+
+p.description {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 20px;
+    color: black;
+    background-color: lightgreen;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    background-color: rgba(0, 150, 200, .8);
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.remarques {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.menu_title a {
+    background-color: #DD7835;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 2px 10px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+    width: 100%;
+    color: white;
+    margin: 0px;
+}
+
+#menu {
+    /*background-image: url("magret.webp");*/
+    margin-top: -80px;
+    display: block;
+    padding-top: 10px;
+}
+#infos {
+    /*background-image: url("magret.webp");*/
+    margin-top: -80px;
+}
+
+.menu_title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.menu_list {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+.menu_list_item {
+    margin: 0px 0px;
+    margin-bottom: 0px;
+}
+
+.menu_list_title {
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    width: 70%;
+}
+
+.menu_list_prix {
+    font-size: 20px;
+    color: yellow;
+    display: inline-block;
+    width: 22%;
+    margin-left: 0px;
+    text-align: right;
+}
+
+.menu_list_ingredients {
+    font-size: 15px;
+    color: #C8C8C8;
+    margin-top: 0px;
+    display: block;
+    width: 80%;
+}
+
+div.colonne{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 2px solid gray;
+}
+
+div.colonne h3{
+    background-color: gray;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 15px;
+    border-bottom: 5px solid rgb(1, 1, 1);
+}
+
+div.colonne1{
+    display: inline-block;
+    background-color: rgba(50, 50, 50, .3);
+    width: 99%;
+}
+
+div.colonne2{
+    background-color: rgba(50, 50, 50, .5);
+    float: right;
+    width: 99%;
+}
+
+table.horaires{
+    padding: 10px 10px;
+    width: 100%;
+}
+
+table.horaires.tr{
+    height: 10%;
+    width: 20%;
+}
+
+table.horaires td{
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+table.horaires td.etape{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 45%;
+}
+table.horaires p {
+    width: 85%;
+}
+
+table.horaires p.jours{
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    border-radius:50px;
+    margin: 5px;
+    color: black;
+}
+
+p.hr{
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+table.horaires p.fermer{
+    background-color: red;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 5px;
+    color: black;
+}
+
+table.data{
+   padding: 10px 10px;
+   width: 100%;
+}
+table.data.td {
+    text-align: center;
+}
+table.data td.rens{
+    width: 45%;
+}
+
+table.data p.id{
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+table.data a.hr{
+    font-size: 15px;
+    text-align: center;
+    width: 90%;
+    display: block;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid lightgreen;
+}
+span.fermer{
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+      text-shadow: 2px 2px 3px black;
+    }
+
+img.gm {
+    width: 35%;
+    border: 4px solid lightgreen;
+}
+.responsive {
+  float: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.resto{
+    width: 100%;
+    height: 1%;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+div.images {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+#carte {
+    padding-top: 25px;
+}
+
+/* Styles pour tablettes */
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 20px 20px 20px;
+        /*min-width: 50%;*/
+    }
+    div.colonne {
+        width: 48%;
+    }
+    div.colonne1 {
+        margin-right: 3%;
+    }
+    div.colonne2 {
+        float: right;
+    }
+    #menu {
+        width: 100%;
+    }
+    img.proprios{
+        width: 25%;
+        margin-left: 38%;
+    }
+    p.description {
+        font-size: 30px;
+    }
+    .responsive {
+        padding: 0 5px;
+        width: 48%;
+        margin-left: auto;
+        margin-right: auto;
+   }
+   .menu_list {
+        max-width: 50%;
+   }
+}
