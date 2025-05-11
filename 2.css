@@ -25,6 +25,7 @@ li {
   border-radius: 0px;
   border-right: 1px solid #bbb;
   padding: 0px 5px;
+  margin-top: 5px;
   /*background-color: lightblue;*/
 }
 
@@ -45,10 +46,7 @@ li a(.active){
     color: gray;
 }
 
-.active {
-    color: gray;
-    background-color: white;
-}
+
 
 div.contenu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("magret.webp") no-repeat center center fixed;
@@ -88,6 +86,12 @@ p.categorie {
 #resto {
     color: red;
     font-size: 20px;
+}
+#nom {
+    font-size: 30px;
+    font-family: "Great Vibes", cursive;
+    font-weight: bold;
+    font-style: normal;
 }
 
 img.proprios{
@@ -205,11 +209,14 @@ div.colonne{
 div.colonne h3{
     background-color: gray;
     text-align: center;
+    margin-top: 0px;
     margin-bottom: 10px;
     text-transform: uppercase;
     display: block;
     font-size: 15px;
-    border-bottom: 5px solid rgb(1, 1, 1);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 2px;
 }
 
 div.colonne1{
@@ -312,7 +319,7 @@ span.fermer{
       color: red;
       font-weight: bold;
       font-size: 18px;
-      text-shadow: 2px 2px 3px black;
+      text-shadow: 2px 2px 3px yellow;
     }
 
 img.gm {
@@ -329,7 +336,6 @@ img.resto{
     width: 100%;
     height: 1%;
     margin-bottom: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
 }
 div.images {
   width: 100%;
