@@ -120,12 +120,12 @@ p.description {
 
 h2 {
     /*background-color: rgba(0, 150, 200, .8);*/
-    display: inline-block;
+    display: block;
     background-color: lightblue;
     border-radius: 5px;
     padding: 4px 8px;
     margin-bottom: 10px;
-    /*width: 85px;*/
+    width: 86px;
     color: black;
 }
 
