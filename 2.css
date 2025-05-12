@@ -13,7 +13,7 @@ ul {
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 80px;
+    top: 90px;
     width: 100%;
     overflow: hidden;
     background-color: black;
@@ -31,10 +31,10 @@ li {
 
 li a {
   display: block;
-  font-size: 15px;
-  color: white;
+  font-size: 16px;
+  color: lightblue;
   text-align: center;
-  padding: 13px 5px;
+  padding: 10px 5px;
   text-decoration: none;
 }
 
@@ -45,8 +45,6 @@ li a:hover:not(.active) {
 li a(.active){
     color: gray;
 }
-
-
 
 div.contenu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("magret.webp") no-repeat center center fixed;
@@ -84,14 +82,17 @@ p.categorie {
     border-radius: 5px;
 }
 #resto {
-    color: red;
     font-size: 20px;
+    margin-left: -20px;
+    color: blue;
 }
 #nom {
+    color: lightblue;
     font-size: 30px;
     font-family: "Great Vibes", cursive;
     font-weight: bold;
     font-style: normal;
+    margin-left: -20px;
 }
 
 img.proprios{
@@ -111,18 +112,21 @@ p.description {
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 20px;
     color: black;
-    background-color: lightgreen;
+    background-color: lightblue;
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 h2 {
-    background-color: rgba(0, 150, 200, .8);
+    /*background-color: rgba(0, 150, 200, .8);*/
+    display: inline-block;
+    background-color: lightblue;
     border-radius: 5px;
     padding: 4px 8px;
     margin-bottom: 10px;
-    width: 100px;
+    /*width: 85px;*/
+    color: black;
 }
 
 .remarques {
